@@ -20,7 +20,7 @@ title: Antonio's Portfolio
     </div>
     <div {% if item.position=="left" %} class="col-md-5" {% elsif item.position=="right" %} class="col-md-5 order-md-1"
         {% endif %}>
-        <img class="featured_image" class="d-block w-100" src={{item.picture}} alt=item.alt>
+        <img class="featured_image" class="d-block w-100" src="{{site.url}}/{{item.picture}}" alt={{item.alt}}>
     </div>
 </div>
 <hr class="featurette-divider">
