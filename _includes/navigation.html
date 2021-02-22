@@ -1,5 +1,17 @@
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark ">
-    {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}class="current_page"{% endif %}>{{ item.name }}</a>
-  {% endfor %}
+<nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand" href="#">AG Logo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse">
+    <div class="navbar-nav">
+      {% for item in site.data.navigation %}
+      <a href="{{ item.link }}" {% if page.url==item.link %} class="nav-link nav-item active" {% else %}
+        class='nav-link nav-item' {% endif %}>
+        {{ item.name }}
+      </a>
+      {% endfor %}
+    </div>
+  </div>
 </nav>

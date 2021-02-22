@@ -1,0 +1,8 @@
+- name: Trail-coated Leukocytes to Kill Circulating Tumor Cells in the Flowing Blood from Prostate Cancer Patients
+  picture: ../assets./images./VSSAsymposium.png
+  alt: Poster presentation
+  position: left
+- name: Evaluating TRAIL Sensitization by Taxanes in 3D Tumor Spheroids Co-Cultured with CAFs
+  picture: ../assets/images/Confocal.png
+  alt: Confocal Microscopy Image
+  position: right
