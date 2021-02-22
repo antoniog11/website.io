@@ -2,4 +2,8 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-
+collections:
+  projects:
+    output: true
+  research:
+    output: true
