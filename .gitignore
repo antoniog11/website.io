@@ -1,5 +1,7 @@
 _site/
+_site/*
+_sute/.
 *-cache*
-.jekyll-cache/
-.jekyll-cache
+.jekyll-cache/*
+.jekyll-cache/.
 .jekyll-metadata

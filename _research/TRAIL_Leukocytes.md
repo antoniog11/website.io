@@ -1,7 +1,7 @@
 ---
 title: Trail-coated Leukocytes to Kill Circulating Tumor Cells 
 position: left
-picture: ../assets./images./VSSAsymposium.png
+picture: assets/images/VSSAsymposium.png
 alt: Poster Presentation
 ---
 Prostate Cancer metastasis remains a leading cause of cancer related death in men and
