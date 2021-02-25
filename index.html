@@ -4,6 +4,23 @@ layout: default
 title: Antonio's Portfolio
 ---
 <div class="jumbotron jumbotron-fluid" style="background-image: url(./assets/images/me.JPG)">
+  
+  <nav class="navbar fixed-top navbar-expand-md ">
+    <a class="navbar-brand" href="#">AG Logo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        {% for item in site.data.navigation %}
+        <a href="{{ item.link }}" {% if page.url==item.link %} class="nav-link nav-item active" {% else %}
+          class="nav-link nav-item" {% endif %}>
+          {{ item.name }}
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </nav>  
   <div class='container-fluid'>
     <div id='Header'>
       <h1 class="display-3">Antonio Glenn</h1>
@@ -13,7 +30,7 @@ title: Antonio's Portfolio
 </div>
 
 <!-- Three columns of text below the jumbotron -->
-<div class="row">
+<div class="row" id="three_column">
   <div class="col-lg-4">
     <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-hammer"
       viewBox="0 0 16 16">
