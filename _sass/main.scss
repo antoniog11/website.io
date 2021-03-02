@@ -19,7 +19,8 @@ html {
 
 /* Header */
 .jumbotron {
-    background-image: url("./assets/images/me.JPG") no-repeat center center fixed;
+    background-image: url("./assets/images/me.JPG") no-repeat;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     color: #fcfcff;
